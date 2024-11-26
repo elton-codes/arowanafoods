@@ -1,13 +1,24 @@
+import About from "./Components/About"
+import Contact from "./Components/Contact"
+import Footer from "./Components/Footer"
+import Hero from "./Components/Hero"
+import Navbar from "./Components/Navbar"
+import Products from "./Components/Products"
 
 
 function App() {
   
   return (
-    <>
-    <div className="bg-purple-400 text-white p-6 text-center">
-      <h1 className="text-2xl font-bold">Welcome To Arowana Foods!</h1>
+    
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Products />
+      <Contact />
+      <Footer />
     </div>
-    </>
+    
   )
 }
 
