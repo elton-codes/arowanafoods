@@ -1,25 +1,62 @@
-import React from 'react'
+
+import React from 'react';
+import { FaTruck, FaUtensils } from "react-icons/fa";
 
 const Hero = () => {
+
   return (
-<section
-      id="hero"
-      className="relative h-[70vh] bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDI%3D)', }}
-    >
-      {/* Overlay for shadow */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      
-      {/* Content */}
-      <div className="relative text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold">Welcome to Arowana Foods</h1>
-        <p className="mt-4 text-lg md:text-xl">Experience the best culinary delights</p>
-        <button className="mt-6 bg-yellow-500 text-black px-6 py-3 rounded-lg hover:bg-yellow-600 transition">
-          Discover More
-        </button>
+    <section className="relative bg-white pt-20">
+      <div className="container mx-auto flex flex-col md:flex-row items-center">
+        {/* Left Content */}
+        <div className="text-center md:text-left md:w-1/2 space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-green-900">
+            Good Food For <br /> Good Health
+          </h1>
+          <p className="text-gray-600">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters.
+          </p>
+          <div className="space-x-4">
+            <button className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+              Order Now
+            </button>
+            {/* <button className="border-2 border-green-700 text-green-700 px-6 py-3 rounded-lg hover:bg-green-100 transition">
+              Book Now
+            </button> */}
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="relative md:w-1/2 mt-8 md:mt-0">
+          <img
+            src="https://i0.wp.com/arowanasale.com/wp-content/uploads/2021/02/Golden-Arowana-Fish.jpg?fit=800%2C538&ssl=1"
+            alt="Salad Bowl"
+            className="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+
+      {/* Features */}
+      <div className="container mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex items-center space-x-4 p-4 shadow rounded-lg">
+          <FaTruck className="text-green-700 text-4xl" />
+          <div>
+            <h3 className="text-lg font-semibold text-green-900">Fast Delivery</h3>
+            <p className="text-gray-600">Delivery within 30 minutes</p>
+          </div>
+        </div>
+        <div className="flex items-center space-x-4 p-4 shadow rounded-lg">
+          <FaUtensils className="text-green-700 text-4xl" />
+          <div>
+            <h3 className="text-lg font-semibold text-green-900">Dine In</h3>
+            <p className="text-gray-600">Enjoy your food fresh, crispy, and hot</p>
+          </div>
+        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

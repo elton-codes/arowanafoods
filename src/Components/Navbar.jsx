@@ -4,7 +4,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-100 text-black text-lg p-5">
+    <nav className="bg-gray-100 text-black text-lg p-5 font-mono">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="text-2xl text-yellow-600 font-bold">Arowana Foods</a>
         <button
