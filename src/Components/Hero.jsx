@@ -17,7 +17,7 @@ const Hero = () => {
           Welcome To Arowana  <br /> Plus Foods
         </h1>
         <p className="text-gray-200 mb-6">
-          We are glad to have you on our platform. It is a long established fact that healthy food produces healthy bodies. Feel free to contact us for your nutritious and affordable foods
+          Home of the most nutritious and affordable Heterotis sausages
         </p>
         <button className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
           Order Now

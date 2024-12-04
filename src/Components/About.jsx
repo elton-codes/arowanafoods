@@ -48,7 +48,7 @@ const About = () => {
           <p className="text-gray-600 text-lg leading-relaxed mb-4">
             Arowana Plus Foods specializes in producing Heterotis sausages, a unique seafood product made from Heterotis niloticus. Our sausages are:
           </p>
-          <ul className="list-disc list-inside text-gray-600 text-lg leading-relaxed mb-6">
+          <ul className="list-disc pl-5 text-gray-600 text-lg leading-relaxed mb-6">
             <li>
               <span className="font-semibold">Nutritious:</span> High in protein and omega-3 fatty acids.
             </li>
@@ -63,27 +63,34 @@ const About = () => {
             </li>
           </ul>
 
-          {/* Toggle Additional Information */}
           {showMore && (
-            <div className="mt-6 text-gray-600">
-              <h4 className="text-xl font-semibold text-green-700 mb-4">
-                Our Goals and Objectives
-              </h4>
-              <ul className="list-disc list-inside text-lg leading-relaxed">
-                <li>
-                  <span className="font-semibold">Increase Awareness:</span> Promote the benefits of Heterotis sausages as a healthy alternative to traditional meat products.
-                </li>
-                <li>
-                  <span className="font-semibold">Expand Market Reach:</span> Target diverse consumer segments, including health-conscious individuals and those with dietary restrictions.
-                </li>
-                <li>
-                  <span className="font-semibold">Support Local Farmers:</span> Empower local fish farmers through sustainable sourcing and fair trade practices.
-                </li>
-                <li>
-                  <span className="font-semibold">Enhance Community Impact:</span> Contribute to local economies by creating jobs and promoting sustainable aquaculture.
-                </li>
-              </ul>
-            </div>
+  <div className="mt-6 text-gray-600">
+    <h4 className="text-xl font-semibold text-green-700 mb-4">
+      Our Goals and Objectives
+    </h4>
+    <ul className="list-disc text-lg pl-5 leading-relaxed">
+      <li className="mb-2">
+        <span className="font-semibold">Increase Awareness:</span> Promote the
+        benefits of Heterotis sausages as a healthy alternative to traditional
+        meat products.
+      </li>
+      <li className="mb-2">
+        <span className="font-semibold">Expand Market Reach:</span> Target
+        diverse consumer segments, including health-conscious individuals and
+        those with dietary restrictions.
+      </li>
+      <li className="mb-2">
+        <span className="font-semibold">Support Local Farmers:</span> Empower
+        local fish farmers through sustainable sourcing and fair trade
+        practices.
+      </li>
+      <li className="mb-2">
+        <span className="font-semibold">Enhance Community Impact:</span>
+        Contribute to local economies by creating jobs and promoting
+        sustainable aquaculture.
+      </li>
+    </ul>
+  </div>
           )}
 
           {/* Buttons */}
