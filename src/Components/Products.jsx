@@ -6,14 +6,13 @@ const Products = () => {
     {
       name: "Sausage",
       description: "Nutritious sausage made from the very best of arowana fish.",
-      image: product3, // Replace with the correct image paths
+      image: product3,
     },
     {
       name: "Sausage",
       description: "Nutritious sausage made from the very best of arowana fish.",
-      image: product2, // Replace with the correct image paths
+      image: product2,
     },
-
   ];
 
   return (
@@ -22,7 +21,7 @@ const Products = () => {
         <h2 className="text-4xl font-bold text-center text-green-900 mb-12">
           Our Mouth-Watering Products
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {products.map((product, index) => (
             <div
               key={index}
@@ -33,7 +32,7 @@ const Products = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-48 md:h-full object-cover rounded-t-lg md:rounded-l-lg"
+                  className="w-full h-auto max-h-60 object-cover rounded-t-lg md:rounded-l-lg"
                 />
               </div>
 
