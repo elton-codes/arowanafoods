@@ -25,19 +25,22 @@ const Products = () => {
           {products.map((product, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-md overflow-hidden"
+              className="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105"
             >
               {/* Product Image */}
               <div className="w-full md:w-1/3">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-auto max-h-60 object-cover rounded-t-lg md:rounded-l-lg"
+                  className="w-full h-auto object-cover rounded-t-lg md:rounded-l-lg"
                 />
               </div>
 
               {/* Product Info */}
-              <div className="w-full md:w-2/3 p-6">
+              <div
+                className="w-full md:w-2/3 p-6 animate-fadeIn"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
                 <h3 className="text-2xl font-semibold text-green-700 mb-2">
                   {product.name}
                 </h3>

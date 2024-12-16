@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="bg-gray-100 text-black text-lg p-2 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* <a href="/" className="text-2xl text-yellow-600 font-bold">Arowana Foods</a> */}
-        <img className='h-[80px] ' src={logo} alt="" />
+        <img className='h-[46px] ' src={logo} alt="" />
         <button
           className="text-black md:hidden"
           onClick={() => setIsOpen(!isOpen)}
