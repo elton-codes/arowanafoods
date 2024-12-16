@@ -1,3 +1,4 @@
+import { Linkedin } from "lucide-react";
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
@@ -36,36 +37,42 @@ const Footer = () => {
     </div>
 
     {/* Contact Info */}
-    <div className="sm:col-span-4 lg:col-span-4 flex flex-col items-center lg:items">
-      <h3 className="text-lg font-bold mb-4">Our Socials</h3>
-      <div className="space-y-4">
-        <a
-          href="#"
-          className="flex items-center space-x-2 hover:text-green-300 transition"
-          aria-label="Facebook"
-        >
-          <FaFacebook size={24} />
-          <span>Facebook</span>
-        </a>
-        <a
-          href="#"
-          className="flex items-center space-x-2 hover:text-green-300 transition"
-          aria-label="Instagram"
-        >
-          <FaInstagram size={24} />
-          <span>Instagram</span>
-        </a>
-        <a
-          href="#"
-          className="flex items-center space-x-2 hover:text-green-300 transition"
-          aria-label="Twitter"
-        >
-          <FaTwitter size={24} />
-          <span>Twitter</span>
-        </a>
-  
-      </div>
-    </div>
+<div className="sm:col-span-4 lg:col-span-4 flex flex-col items-center lg:items">
+  <h3 className="text-lg font-bold mb-4">Our Socials</h3>
+  <div className="space-y-4">
+    <a
+      href="https://www.facebook.com/aworana_plus_foods"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center space-x-2 hover:text-green-300 transition"
+      aria-label="Facebook"
+    >
+      <FaFacebook size={24} />
+      <span>Facebook</span>
+    </a>
+    <a
+      href="https://www.instagram.com/aworana_plus_foods/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center space-x-2 hover:text-green-300 transition"
+      aria-label="Instagram"
+    >
+      <FaInstagram size={24} />
+      <span>Instagram</span>
+    </a>
+    <a
+      href="https://www.linkedin.com/company/aworana-plus-foods/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center space-x-2 hover:text-green-300 transition"
+      aria-label="LinkedIn"
+    >
+      <Linkedin size={24} />
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</div>
+
   </div>
 
   {/* Bottom Section */}

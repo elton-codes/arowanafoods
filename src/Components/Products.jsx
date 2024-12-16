@@ -17,11 +17,11 @@ const Products = () => {
 
   return (
     <section id="products" className="py-8 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-green-900 mb-12">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 md:px-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-green-900 mb-10 sm:mb-12">
           Our Mouth-Watering Products
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {products.map((product, index) => (
             <div
               key={index}
@@ -32,19 +32,19 @@ const Products = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-auto object-cover rounded-t-lg md:rounded-l-lg"
+                  className="w-full h-48 sm:h-56 md:h-auto object-cover rounded-t-lg md:rounded-l-lg"
                 />
               </div>
 
               {/* Product Info */}
               <div
-                className="w-full md:w-2/3 p-6 animate-fadeIn"
+                className="w-full md:w-2/3 p-4 sm:p-6 animate-fadeIn"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <h3 className="text-2xl font-semibold text-green-700 mb-2">
+                <h3 className="text-xl sm:text-2xl font-semibold text-green-700 mb-2">
                   {product.name}
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
                   {product.description}
                 </p>
                 <button className="bg-green-700 text-white px-4 py-2 rounded shadow hover:bg-green-800 transition">
