@@ -123,9 +123,9 @@ const About = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center md:justify-start space-x-4 mt-6">
-            <button className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+            {/* <button className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
               Order Now
-            </button>
+            </button> */}
             <button
               onClick={toggleReadMore}
               className="border-2 border-green-700 text-green-700 px-6 py-3 rounded-lg hover:bg-green-100 transition"

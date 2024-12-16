@@ -41,15 +41,20 @@ const Products = () => {
                 className="w-full md:w-2/3 p-4 sm:p-6 animate-fadeIn"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <h3 className="text-xl sm:text-2xl font-semibold text-green-700 mb-2">
+                <h3 className="text-xl sm:text-2xl font-semibold text-green-700 mb-4">
                   {product.name}
                 </h3>
-                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
                   {product.description}
                 </p>
-                <button className="bg-green-700 text-white px-4 py-2 rounded shadow hover:bg-green-800 transition">
+                <a
+                  href="https://wa.me/233598466146"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-700 text-white px-4 py-2 rounded shadow hover:bg-green-800 transition"
+                >
                   Order Now
-                </button>
+                </a>
               </div>
             </div>
           ))}

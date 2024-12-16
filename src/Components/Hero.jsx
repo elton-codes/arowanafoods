@@ -19,9 +19,14 @@ const Hero = () => {
         <p className="text-gray-200 mb-6">
           Home of nutritious and affordable Heterotis sausages
         </p>
-        <button className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition">
+        <a
+          href="https://wa.me/233598466146"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:bg-green-800 transition"
+        >
           Order Now
-        </button>
+        </a>
       </div>
     </section>
   );
