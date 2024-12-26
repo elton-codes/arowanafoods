@@ -51,19 +51,19 @@ const Navbar = () => {
         <div className="hidden md:flex md:space-x-8">
           <a
             href="#about"
-            className="text-gray-700 font-medium hover:text-green-700 transition"
+            className="text-gray-900 font-medium hover:text-green-700 transition"
           >
             About Us
           </a>
           <a
             href="#products"
-            className="text-gray-700 font-medium hover:text-green-700 transition"
+            className="text-gray-900 font-medium hover:text-green-700 transition"
           >
             Our Products
           </a>
           <a
             href="#contact"
-            className="text-gray-700 font-medium hover:text-green-700 transition"
+            className="text-gray-900 font-medium hover:text-green-700 transition"
           >
             Contact Us
           </a>
