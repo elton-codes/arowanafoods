@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { sausage, sausage2, sausage3 } from "../assets";
+import { sausage1, sausage2, sausage3 } from "../assets";
 
 const About = () => {
   const [showMore, setShowMore] = useState(false); // State for toggling visibility
@@ -15,7 +15,7 @@ const About = () => {
         <div className="grid grid-cols-2 gap-4 self-start">
   <div className="relative h-64 md:h-80">
     <img
-      src={sausage}
+      src={sausage1}
       alt="Dish 1"
       className="w-full h-full rounded-lg object-cover shadow-md"
     />
