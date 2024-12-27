@@ -1,11 +1,12 @@
 import React from "react";
+import { heroImg } from "../assets";
 
 const Hero = () => {
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat h-[600px] flex items-center justify-center"
       style={{
-        backgroundImage: "url('https://i0.wp.com/arowanasale.com/wp-content/uploads/2021/02/Golden-Arowana-Fish.jpg?fit=800%2C538&ssl=1')",
+        backgroundImage: `url(${heroImg})`,
       }}
     >
       {/* Dark Overlay */}

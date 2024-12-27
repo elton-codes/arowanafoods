@@ -1,5 +1,5 @@
 import React from "react";
-import { product1, product2, product3 } from "../assets";
+import { product1, product2, product3, product4, product5, product6, product7, product8 } from "../assets";
 
 const Products = () => {
   const products = [
@@ -12,6 +12,26 @@ const Products = () => {
       name: "Sausage",
       description: "Nutritious sausage made from the very best of arowana fish.",
       image: product2,
+    },
+    {
+      name: "Sausage",
+      description: "Nutritious sausage made from the very best of arowana fish.",
+      image: product4,
+    },
+    {
+      name: "Sausage",
+      description: "Nutritious sausage made from the very best of arowana fish.",
+      image: product5,
+    },
+    {
+      name: "Sausage",
+      description: "Nutritious sausage made from the very best of arowana fish.",
+      image: product6,
+    },
+    {
+      name: "Sausage",
+      description: "Nutritious sausage made from the very best of arowana fish.",
+      image: product8,
     },
   ];
 
